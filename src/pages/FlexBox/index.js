@@ -1,8 +1,33 @@
 import React, {Component} from 'react';
 import {Image, Text, View} from 'react-native';
 
-class MateriFlexBox extends Component {
+class FlexBox extends Component {
+  constructor(props) {
+    super(props);
+    console.log('constructor');
+    this.state = {
+      follower: 200,
+    };
+  }
+  componentDidMount() {
+    console.log('component did mount');
+    setTimeout(() => {
+      this.setState({
+        follower: 404,
+      });
+    }, 3000);
+  }
+
+  componentDidUpdate() {
+    console.log('component did update');
+  }
+
+  componentWillUnmount() {
+    console.log('component will unmount');
+  }
+
   render() {
+    console.log('render');
     return (
       <View>
         <View
@@ -17,7 +42,7 @@ class MateriFlexBox extends Component {
           <View style={{backgroundColor: 'green', width: 50, height: 50}} />
           <View style={{backgroundColor: 'blue', width: 50, height: 50}} />
         </View>
-
+        {/* 
         <View
           //alignItems Flex-end, Flex-start, Center
           style={{
@@ -56,7 +81,7 @@ class MateriFlexBox extends Component {
           <View style={{backgroundColor: 'yellow', flex: 1, height: 50}} />
           <View style={{backgroundColor: 'green', flex: 2, height: 50}} />
           <View style={{backgroundColor: 'blue', flex: 3, height: 50}} />
-        </View>
+        </View> */}
 
         <View
           style={{
@@ -85,6 +110,7 @@ class MateriFlexBox extends Component {
               Gilang Wahyudi
             </Text>
             <Text>Laravel Entusiast</Text>
+            <Text>{this.state.follower}</Text>
           </View>
         </View>
       </View>
@@ -92,4 +118,4 @@ class MateriFlexBox extends Component {
   }
 }
 
-export default MateriFlexBox;
+export default FlexBox;

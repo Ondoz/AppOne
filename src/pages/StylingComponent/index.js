@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {View, Text, StyleSheet, Image} from 'react-native';
-import Image_1 from './Image-1.png';
+import Image_1 from '../../assets/image/Image-1.png';
 
 const StyleReactNativeComponent = () => {
   return (
