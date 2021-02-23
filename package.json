@@ -8,7 +8,7 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",
-    "e-android": "~/Android/Sdk/emulator/emulator -avd Pixel_3a_API_24"
+    "e-android": "~/Android/Sdk/tools/emulator -avd Pixel_3a_API_24"
   },
   "dependencies": {
     "react": "16.13.1",
