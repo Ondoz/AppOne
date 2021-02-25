@@ -1,9 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import {ScrollView, View} from 'react-native';
 import MateriFlexBox from './pages/FlexBox';
+import PropsDinamis from './pages/PropsDinamis';
 import PositionReactNative from './pages/Position';
 import SampleComponent from './pages/SampleComponent';
 import StyleReactNativeComponent from './pages/StylingComponent';
+import StateDinamis from './pages/StateDinamis';
 
 const App = () => {
   const [isShow, SetIsShow] = useState(true);
@@ -17,8 +19,10 @@ const App = () => {
       <ScrollView>
         {/* <SampleComponent />
         <StyleReactNativeComponent /> */}
-        {isShow && <MateriFlexBox />}
+        {/* {<MateriFlexBox />} */}
         {/* <PositionReactNative /> */}
+        {/* <PropsDinamis /> */}
+        <StateDinamis />
       </ScrollView>
     </View>
   );
