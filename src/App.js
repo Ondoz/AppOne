@@ -6,6 +6,7 @@ import PositionReactNative from './pages/Position';
 import SampleComponent from './pages/SampleComponent';
 import StyleReactNativeComponent from './pages/StylingComponent';
 import StateDinamis from './pages/StateDinamis';
+import Communication from './pages/communication';
 
 const App = () => {
   const [isShow, SetIsShow] = useState(true);
@@ -22,7 +23,8 @@ const App = () => {
         {/* {<MateriFlexBox />} */}
         {/* <PositionReactNative /> */}
         {/* <PropsDinamis /> */}
-        <StateDinamis />
+        {/* <StateDinamis /> */}
+        <Communication />
       </ScrollView>
     </View>
   );
